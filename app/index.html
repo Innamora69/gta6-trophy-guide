@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: roadmap to the platinum, missable flags, and a guide with sources for every trophy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff4d9d'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'%3EVI%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+    <p class="subtitle">Every trophy, in your own words, with a roadmap to the platinum. Works fully offline — your progress never leaves this browser.</p>
+  </div>
+  <div class="progress" aria-label="Overall progress">
+    <div class="progress-numbers"><strong id="progressCount">0 / 55</strong><span id="progressPct">0% earned</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBarWrap"><div class="bar-fill" id="progressBar"></div></div>
+    <ul class="grade-counts" id="gradeCounts"></ul>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Trophy filters">
+  <label class="search">Search
+    <input id="search" type="search" placeholder="Search name, description or guide…" autocomplete="off">
+  </label>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <label class="grade">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="spoiler"><input id="spoilers" type="checkbox"> Spoiler-free mode</label>
+  <span class="toolbar-progress" id="toolbarProgress">0 / 55 earned</span>
+  <div class="actions">
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset</button>
+  </div>
+</nav>
+
+<main>
+  <section id="roadmap" class="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the Platinum</h2>
+    <p class="roadmap-facts"><strong>Platinum facts:</strong> about 200 hours &middot; difficulty 4/10 &middot; 1 playthrough &middot; 0 online trophies &middot; no DLC or multiplayer needed &middot; no mission replay &middot; 15 manual save slots &middot; cheats disable trophies and saving.</p>
+    <ol class="steps">
+      <li>
+        <h3>Step 1 — Play the story, and mind the one missable trophy</h3>
+        <p>Play Chapters 1–5 in order and earn the 12 story trophies as they come. <strong>Warning:</strong> in Chapter 1, after the mission “Down to Earth”, Lucia is in the kitchen in the morning and says she wants to meditate — follow her to the balcony of Jason’s house and choose <em>Accept</em>. That first meditation is the only trophy that may be missable: <strong>Positive Mental Attitude</strong> needs all 18 meditation spots, and this balcony spot may only exist in Chapter 1. Do it the first morning it is offered, then meditate at every other spot with both Jason and Lucia.</p>
+      </li>
+      <li>
+        <h3>Step 2 — 100% Completion Checklist</h3>
+        <p>After the story, open Touchpad &gt; Progress &gt; Stats &gt; 100% Completion. A story-only run lands at only about 60% true completion. The checklist needs: 100 optional missions, 200 of 277 vehicles, 100 of 255 animals, 300 stunts, 70 of 80 challenges, 15 of 18 meditations, plus every robbery, bank job, drone race and shooting range. This is the long grind — budget around 100 hours after the story — and it unlocks the gold trophy <strong>A Long Road</strong>.</p>
+      </li>
+      <li>
+        <h3>Step 3 — Strangers &amp; Freaks and the cleanup</h3>
+        <p>Finish the stranger questlines (only certain strands count toward the eight for <strong>Strangers &amp; Freaks</strong> — see its guide), then sweep up the remaining collectibles, activities and robberies. When the 54th trophy pops, the platinum <strong>Vice Got a Price!</strong> follows automatically.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="list" aria-labelledby="listTitle">
+    <h2 id="listTitle">All 55 trophies</h2>
+    <p class="list-hint">Click a card to open its full guide. Tick the checkbox when you earn a trophy — your progress is saved in this browser.</p>
+    <p id="emptyMsg" class="empty" hidden></p>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="detail" class="detail" aria-labelledby="detailTitle" hidden>
+    <div class="detail-head">
+      <h2 id="detailTitle">Trophy guide</h2>
+      <button id="detailClose" type="button" aria-label="Close guide">×</button>
+    </div>
+    <div id="detailBody"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. Trophy names, descriptions and grades are as PlayStation publishes them; every guide is written in our own words and cites its sources beside each trophy. Sources: PowerPyx, Planet GTA 6, EGamers, GTA Zone and OutputLag — open a source link only when you click it; the app itself loads nothing from the network.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
